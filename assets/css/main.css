@@ -315,11 +315,6 @@ input, select, textarea {
 	z-index: 2; 
 	transition: .5s;
 }
-.work-icon{
-	width: 90px; 
-	z-index: 2; 
-	transition: .5s; 
-}
 .skill-title h3{
 	color: #fff; 
 	margin-top: 0.5rem; 
