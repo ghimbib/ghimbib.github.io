@@ -228,7 +228,8 @@ input, select, textarea {
 /*navbar*/
 .navbar {
     display: flex;
-    position: relative;
+	position: relative;
+	width: 100%;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
