@@ -6,21 +6,48 @@
 -->
 <html>
 	<head>
-		<title>Bibek Ghimire</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="assets/js/script.js" defer></script>
+		<title>Bibek Ghimire</title>
 	</head>
 	<body class="is-preload">
-
+		<!--Navigation Bar-->	
+			<nav class="navbar">
+				<div class="brand-title">Bibek Ghimire</div>
+				<a href="#" class="toggle-button">
+				  <span class="bar"></span>
+				  <span class="bar"></span>
+				  <span class="bar"></span>
+				</a>
+			
+				
+				<div class="navbar-links">
+				  <ul>
+					<li><a href="#article_id">Home</a></li>
+					<li><a href="#About">About Me</a></li>
+					<li><a href="#Skill">Skills</a></li>
+					<li><a href="#Work">Work</a></li>
+					<li><a href="#Projects">Projects</a></li>
+					<li><a href="#Education">Education</a></li>
+					<li><a href="#hobbies">Hobbies</a></li>
+				  </ul>
+				</div>
+			  </nav>
 		<!-- Header -->
 		<section id="header">
-				<header> 
+		<article id="home">
+			<header>
 		<!-- Personal Image-->
 					<img class="image profile" src="images/BibekGhi1.jpg" alt="Bibek Ghimire">
 		<!-- Name and Role Descriptions -->
+<<<<<<< HEAD
 					<h1>Bibek Ghimireeeee</h1>
+=======
+				
+>>>>>>> c4ce1eedcbc019d418f08a161d311dbf16708587
 		<!-- Icons to contact with respective links-->
 					<ul class="icons">
 						<li><a href="mailto:bibekghimire@icloud.com" class="fa fa-envelope"></a></li><span></span>
@@ -31,27 +58,33 @@
 						</ul>
 		<!-- Job Description -->
 					<p>Product Manager | Owner | Developer | Engineer</p>
-				</header>
-			
+			</header>
+		</article>	
+		<!-- Transition -->	
+		<a id="About"></a>
 			<footer>
-			<a class="button style2 scrolly-middle">Hello! Let me introduce myself...</a>
+			<a class="button style2 scrolly-middle">Hi there! Let me introduce myself...</a>
 			</footer>
 		</section>
-		<!-- About Me Section...-->	<!-- Banner -->
+		<!-- About Me Section...-->	
 			<section id=banner>
 				<header>
 					<h2>Who am I?</h2>
 				</header>
 					<p>I am a Nepali-American that is curious about everything and addicted to learning. I do my best in team environments and have a very diverse skill-set.
 						  My education background is in Aerospace & Mechanical Engineering - but my life and work expereinces are vast... </p>
-					<footer>
-						<a class="button style2 scrolly-middle">Below are some of my core competencies...Please click on each to learn more</a>
-					</footer>
+					
 			</section>
 				
 		<!-- Transition to Next Section -->
-			
+		<a id="Skill"></a>
+		<section id=footer>
+		<footer>
+		<a class="button style1 scrolly-middle">Below are some of my core skills...<br>Click on each to learn more!</br></a>
+		</footer>
+		</section>
 		<!--Skills Section -->
+		
 		<article id="Skill">
 		<div class="inner">
 			<div class="container">
@@ -107,10 +140,10 @@
 	
 		</div>	
 	</article>
-		
+	<a id="Work"></a>
 		<section id = footer >
 			<footer>
-			<a class="button style1 scrolly-middle">Let's jump into my work history...</a>
+			<a class="button style1 scrolly-middle">Let's jump into my work history...<br>Click on each to learn more!</br></a>
 			</footer>
 		</section>
 	<section>
@@ -137,10 +170,10 @@
 				</div>
 			</div>
 		</article>
-	
+		<a id="Projects"></a>
 			<section id = footer >
 					<footer>
-					<a class="button style1 scrolly-middle">Some cool projects that i've been a part of...</a>
+					<a class="button style1 scrolly-middle">Projects that i've been a part of...<br>Click on each to learn more!</br></a>
 					</footer>
 			</section>
 		<section>
@@ -178,24 +211,29 @@
 				</div>
 			</article>
 		</section>
+		<a id="Education"></a>
 		<section id = footer >
 			<footer>
-			<a class="button style1 scrolly-middle">My education and background</a>
+			<a class="button style1 scrolly-middle">My education</a>
 			</footer>
 		</section>
 		<section id = footer>
-		<article class="button style2 scrolly-middle">
-			<div class="inner">
-				<a href="https://go.okstate.edu/" class="image profile"><img  src="images/okstate.png" alt="" /></a>
-					<h2>Aerospace <br>
-						& 
-					</br> 
-					Mechanical Engineering
-					<br>2009-2012</br></h2>	</a>
-				<p>Bachelors of Science</p>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="img">
+						<img src="images/okstate.png" class="skill-icon">
+					</div>
+					<h3>Aerospace 
+						<br>&</br>
+						Mechanical Engineering
+					</h3>
+					<p>2009 - 2012<br>Bachelors of Science</br></p>
+					
+				</div>
 			</div>
 		</article>
 		</section>
+		<a id="hobbies"></a>
 		<section id = footer >
 			<footer>
 			<a class="button style1 scrolly-middle">Hobbies & Interests</a>
@@ -207,64 +245,69 @@
 					<div class="skill-box">
 						<div class="skill-title">
 							<div class="img">
-								<img src="images/product-management.svg" class="skill-icon">
+								<img src="images/cycling.svg" class="skill-icon">
 							</div>
-							<h3>Product Management</h3>		
+							<h3>Cycling</h3>		
 						</div>
 					</div>
 					<div class="skill-box">
 						<div class="skill-title">
 							<div class="img">
-								<img src="images/development.svg" class="skill-icon">
+								<img src="images/jogging.svg" class="skill-icon">
 							</div>
-							<h3>Product Development</h3>
+							<h3>Running</h3>
 						</div>
 					</div>
 					<div class="skill-box">
 						<div class="skill-title">
 							<div class="img">
-								<img src="images/agile.svg" class="skill-icon">
+								<img src="images/carpenter.svg" class="skill-icon">
 							</div>
-							<h3>Project Management</h3>
+							<h3>Woodworking</h3>
 						</div>
 					</div>	
 					<div class="skill-box">
 						<div class="skill-title">
 							<div class="img">
-								<img src="images/statistics.png" class="skill-icon">
+								<img src="images/test.svg" class="skill-icon">
 							</div>
-							<h3>Analytics</h3>
+							<h3>Biology</h3>
 						</div>
 					</div>
 					<div class="skill-box">
 						<div class="skill-title">
 							<div class="img">
-								<img src="images/presentation.png" class="skill-icon">
+								<img src="images/agriculture.png" class="skill-icon">
 							</div>
-							<h3>Presentations</h3>
+							<h3>Gardening</h3>
 						</div>
 					</div>
 					<div class="skill-box">
 						<div class="skill-title">
 							<div class="img">
-								<img src="images/teamwork.png" class="skill-icon">
+								<img src="images/Space.svg" class="skill-icon">
 							</div>
-							<h3>Teamwork</h3>
+							<h3>Space & Aviation</h3>
 						</div>
 					</div>
 				</div>		
 		
 			</div>	
 		</article>
-	
+
+	</body>
+	<footer>
 		<section id="footer">
 			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; Bibek Ghimire - All rights reserved.</li><li>Design inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
+					<p>&copy; Bibek Ghimire - All rights reserved. Design inspired by: <a href="http://html5up.net">HTML5 UP</a></p>
+			<div><P>Icons by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market, </a> 
+					<a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons, </a>
+					<a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik, </a> and
+					<a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik, </a>
+				from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></P></div>
 			</div>
 		</section>
-
+	</footer>
 		<!--Scripts --> 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -273,5 +316,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<<<<<<< HEAD
 			<script src="https://unpkg.com/scrollreveal"></script>
 </html>
+=======
+</html>
+>>>>>>> c4ce1eedcbc019d418f08a161d311dbf16708587
