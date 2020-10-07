@@ -238,9 +238,7 @@ button,
     width:15rem; 
     border-radius: 15%; 
 }
-
-
-/* Right side buttons for Skills, Work, Projects, Education and Hobbies Section*/
+/* Skills Section*/
 .inner {
 	padding-top: 20px;
 }
@@ -322,6 +320,3 @@ button,
 	color: #fff; 
 	margin-top: 0.5rem; 
 }
-
-
-	
