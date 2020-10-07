@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+body {
+    background-color: #183026;
+    background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: top left, center 0;
+    background-attachment: fixed, fixed;
+    font-family: 'Poppins';
+    color: white; 
+   
+}
+
+/* Button */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+    -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    border: 0;
+    background: #35b88f;
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    padding: 1em 3em 1em 3em;
+    text-align: center;
+    border-radius: 3em;
+    font-weight: 400;
+}
+
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    button:hover,
+    .button:hover {
+        background: #45c89f;
+    }
+
+    input[type="button"].style2,
+    input[type="submit"].style2,
+    input[type="reset"].style2,
+    button.style2,
+    .button.style2 {
+        color: #3a3939;
+        background: #fff;
+        box-shadow: inset 0 0 0 1px #fff;
+    }
+
+        input[type="button"].style2:hover,
+        input[type="submit"].style2:hover,
+        input[type="reset"].style2:hover,
+        button.style2:hover,
+        .button.style2:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff !important;
+            text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25) !important;
+        }
+
+    input[type="button"].style3,
+    input[type="submit"].style3,
+    input[type="reset"].style3,
+    button.style3,
+    .button.style3 {
+        background: none;
+        color: #3a3939;
+        box-shadow: inset 0 0 0 1px #dad9d9;
+    }
+
+        input[type="button"].style3:hover,
+        input[type="submit"].style3:hover,
+        input[type="reset"].style3:hover,
+        button.style3:hover,
+        .button.style3:hover {
+            background: rgba(58, 57, 57, 0.025);
+        }
+/* Poptrox */
+
+.poptrox-popup {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+    background: #fff;
+    padding-bottom: 3em;
+}
+
+    .poptrox-popup .loader {
+        width: 48px;
+        height: 48px;
+        background: url("images/loader.gif");
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -24px 0 0 -24px;
+    }
+
+    .poptrox-popup .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 3em;
+        line-height: 3em;
+        text-align: center;
+        cursor: default;
+        z-index: 1;
+    }
+
+    .poptrox-popup .nav-next,
+    .poptrox-popup .nav-previous {
+        -moz-transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.01);
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+
+        .poptrox-popup .nav-next:before,
+        .poptrox-popup .nav-previous:before {
+            content: '';
+            position: absolute;
+            width: 96px;
+            height: 64px;
+            background: url("images/poptrox-nav.svg");
+            top: calc(50% - 1.5em);
+            margin: -32px 0 0 0;
+        }
+
+    .poptrox-popup:hover .nav-next,
+    .poptrox-popup:hover .nav-previous {
+        opacity: 0.5;
+    }
+
+        .poptrox-popup:hover .nav-next:hover,
+        .poptrox-popup:hover .nav-previous:hover {
+            opacity: 1.0;
+        }
+
+    .poptrox-popup .nav-next {
+        right: 0;
+    }
+
+        .poptrox-popup .nav-next:before {
+            right: 0;
+        }
+
+    .poptrox-popup .nav-previous {
+        left: 0;
+    }
+
+        .poptrox-popup .nav-previous:before {
+            -moz-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+            left: 0;
+            -ms-filter: "FlipH";
+            filter: FlipH;
+        }
+
+    .poptrox-popup .closer {
+        -moz-transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 64px;
+        height: 64px;
+        text-indent: -9999px;
+        z-index: 2;
+        opacity: 0;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+
+        .poptrox-popup .closer:before {
+            -moz-transition: background-color 0.5s ease-in-out;
+            -webkit-transition: background-color 0.5s ease-in-out;
+            -ms-transition: background-color 0.5s ease-in-out;
+            transition: background-color 0.5s ease-in-out;
+            content: '';
+            display: block;
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            box-shadow: inset 0 0 0 1px #fff;
+            background: rgba(255, 255, 255, 0.1) url("images/poptrox-closer.svg") center center;
+            color: #fff !important;
+        }
+
+    .poptrox-popup:hover .closer {
+        opacity: 0.5;
+    }
+
+        .poptrox-popup:hover .closer:hover {
+            opacity: 1.0;
+        }
+
+
+
+.customDiv{
+    margin: 3px; 
+    min-height: 300px; 
+    background-color: silver; 
+    text-align: center; 
+    font-size: large; 
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+.image.profile {
+    float: center; 
+    width:15rem; 
+    border-radius: 15%; 
+}
+
+
+/* Right side buttons for Skills, Work, Projects, Education and Hobbies Section*/
+.inner {
+	padding-top: 20px;
+}
+.skill-box{
+	padding: 1rem;
+	color:#ddd; 
+	cursor: pointer;
+}
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+	width: 35px; 
+}
+.skill-box:hover .img{
+	transform: translateY(-10px);
+}
+
+.skill-title{
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.skill-title:after{
+	content: '';
+	position: absolute; 
+	bottom: 0; 
+	right: 50%; 
+	width: 0px; 
+	height: 4px; 
+	border-radius: 2px 0 0 2px; 
+	background-color: #2ecc71; 
+	transition: .5s; 
+}
+.skill-title:before{
+	content: '';
+	position: absolute; 
+	bottom: 0; 
+	left: 50%; 
+	width: 0; 
+	height: 4px; 
+	border-radius: 0 2px 2px 0; 
+	background-color: #2ecc71; 
+	transition: .5s; 
+	
+}
+
+.img{
+	width: 90px; 
+	height: 90px;
+	position: relative;
+	position: relative;
+	border-radius: 25%; 
+	background-color: #fff; 
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	transition: .5s; 
+}
+
+.img:after{
+	content: ""; 
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	width: 60%; 
+	height: 100%; 
+	background: rgba(100, 100 ,100 ,0.5);
+	border-radius: 25%; 
+	transition: .5s; 
+}
+.skill-icon{
+	width: 80%; 
+	z-index: 2; 
+	transition: .5s;
+}
+.skill-title h3{
+	color: #fff; 
+	margin-top: 0.5rem; 
+}
+
+
+	
