@@ -51,7 +51,7 @@
 						<a class="nav-link px-2" href="tel:281-910-8744"> <i class="fas fa-phone"></i><span class="sr-only">phone</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link px-2" href="sms:281-910-8744"> <i class="fas fa-comment"></i><span class="sr-only">SMS</span></a>
+						<a class="nav-link px-2" href="mds:281-910-8744"> <i class="fas fa-comment"></i><span class="sr-only">mdS</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link px-2" href="https://www.google.com/maps/place/Houston,+TX/"> <i class="fas fa-map-marker-alt"></i><span class="sr-only">Location</span></a>
@@ -83,122 +83,127 @@
 			</ul>
 		</div>
 	</nav>
-	<section id="About">
-	<div class=container-fluid>
+	
+	<!-- Container for about me section -->
+	<div class="container" id="About">
 		<!--Image Section on Left-->
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-xl-6">
 				<div class="text-center">
 				<br></br>
 				<div class="button style3">
-					<img class="image profile" src="images/BibekGhi1.jpg"><br></br>
-				<h5 class="button style1"> Product Manager</h5> <h5>Owner - Developer -  Engineer</h5>
+					<img class="image profile" src="images/BibekGhi1.jpg">
+				<h5> Product Manager</h5> <p1>Owner - Developer -  Engineer</p1>
 				</div>			
-			</div>
-			</div>
-			
+				</div>
+			</div>		
 		<!--Everything Else on Right-->	
-
-		<div class="col-md-8">
-			<br></br>
-					<div class="button style2">
-					<h5 class="button style1">
+			<div class="col-xl-6">
+				<br></br>
+				
+				<h5 class="button style1 d-flex justify-content-center">
 					Hi There! Let me introduce myself...
-					</h5>
-					<br></br>
-						<p>I am a Nepali-American that is curious about everything and addicted to learning. 
-						I do my best in team environments and have a very diverse skill-set. 
-						My education background is in Aerospace & Mechanical Engineering 
-						and my work background is engineering and product management
-						- but my life and work expereinces are vast.</p>	
+				</h5>
+						<p class="text-left button style2">My name is Bibek Ghimire and I am a Nepali-American. 
+						My passion is in bringing ideas, people and teams together to come up with amazing
+						products that customers love.   
+						I enjoy learning and am always looking to improve myself, processes and products. 
+						My motto is to lead through influence, strive for better, continiously learn to educate, be good and do good. 
+						Click here to learn more about me...
+						</p>	
+				</div>
+				
+			</div>
+	</div>
+	<!-- Container for Skills section -->
+	<div class="container" id="Skills">
+		<!-- Skills Section New Row -->		
+		<br></br>
+		<div class="button style1 d-flex justify-content-center">
+				<h5>
+					Below are some of my core skills...
+				</h5>
+		</div>
+		<div class="row d-flex justify-content-around">
+			<div class="col-md-auto">
+				<div class="skill-box">
+					<div class="skill-title" class="btn btn-primary" data-toggle="collapse" href="#ProductManagement" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<div class="img">
+							<img src="images/product-management.svg" class="skill-icon">
+						</div>
+						<h5>Product Management</h5>
 					</div>
-					<br></br>	
-				
-				
-							<section id="skills">
-									<div class="text-center">
-										<h5 class="button style1">
-											Below are some of my core skills...
-										</h5>
-									</div>
-							<div class="container">
-								<div class="row align-items-center">
-									<div class="col-sm-4">
-										<div class="skill-box">
-											<div class="skill-title" class="btn btn-primary" data-toggle="collapse" href="#ProductManagement" role="button" aria-expanded="false" aria-controls="collapseExample">
-												<div class="img">
-													<img src="images/product-management.svg" class="skill-icon">
-												</div>
-												<h5 class="text-center">Product Management</h5>
-											</div>
-											<div class="collapse" id="ProductManagement">
-												
-													<p1 class="button style2">
-													Product strategy</br>
-													Road mapping
-
-
-													</p1>
-											</div>
-										</div>
-										<div class="skill-box">
-											<div class="skill-title">
-												<div class="img">
-													<img src="images/statistics.png" class="skill-icon">
-												</div>
-												<h5 class="text-center">Analytics</h5>
-											</div>
-										</div>
-									</div>	
-									<div class="col-sm-4">
-										<div class="skill-box">
-											<div class="skill-title">
-												<div class="img">
-													<img src="images/development.svg" class="skill-icon">
-												</div>
-												<h5 class="text-center">Product Development</h5>
-											</div>
-										</div>
-										<div class="skill-box">
-											<div class="skill-title">
-												<div class="img">
-													<img src="images/presentation.png" class="skill-icon">
-												</div>
-												<h5 class="text-center">Presentations</br></h5>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="skill-box">
-											<div class="skill-title">
-												<div class="img">
-													<img src="images/agile.svg" class="skill-icon">
-												</div>
-												<h5 class="text-center">Project Management</h5>
-											</div>
-										</div>
-									
-										<div class="skill-box">
-											<div class="skill-title">
-												<div class="img">
-													<img src="images/teamwork.png" class="skill-icon">
-												</div>
-												<h5 class="text-center">Teamwork</h5>
-											</div>
-										</div>
-									</div>
-								</div>	
-							</div>	
-							</section>
-							<section id="Work">
-								<div class="text-center">
-									<h5 class="button style1">
-										Let's jump into my work history...
-									</h5>
-								</div>
+					<div class="collapse" id="ProductManagement">
+							<p1 class="button style2 d-flex justify-content-around">
+							Product strategy, 
+							Road mapping,
+							</p1>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-auto">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/development.svg" class="skill-icon">
+						</div>
+						<h5>Product Development</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-auto">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/agile.svg" class="skill-icon">
+						</div>
+						<h5>Project Management</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-auto">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/statistics.png" class="skill-icon">
+						</div>
+						<h5>Data Analytics</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-auto">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/presentation.png" class="skill-icon">
+						</div>
+						<h5>Market Strategy</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-auto">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/teamwork.png" class="skill-icon">
+						</div>
+						<h5>Collaboration</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container for Work section -->									
+	<div class="container" id="work">
+	
+		<div class="button style1 d-flex justify-content-center">
+			<h5>
+				Let's jump into my work history...
+			</h5>
+		</div>
 								<div class="container">
 									<div class="row align-items-center">
-										<div class="col-sm-6">
+										<div class="col-md-6">
 											<div class="skill-box">
 												<div class="skill-title">
 													<div class="img">
@@ -208,7 +213,7 @@
 												</div>
 											</div>
 										</div>		
-										<div class="col-sm-6">
+										<div class="col-md-6">
 											<div class="skill-box">
 												<div class="skill-title">
 													<div class="img">
@@ -228,7 +233,7 @@
 								</div>
 								<div class="container">
 									<div class="row align-items-center">
-										<div class="col-sm-4">
+										<div class="col-md-4">
 											<div class="skill-box">
 												<div class="skill-title">
 													<div class="img">
@@ -239,7 +244,7 @@
 												</div>
 											</div>
 										</div>	
-										<div class="col-sm-4">
+										<div class="col-md-4">
 											<div class="skill-box">
 												<div class="skill-title">
 													<div class="img">
@@ -250,7 +255,7 @@
 												</div>
 											</div>
 										</div>	
-										<div class="col-sm-4">
+										<div class="col-md-4">
 											<div class="skill-box">
 												<div class="skill-title">
 													<div class="img">
@@ -272,7 +277,7 @@
 								</div>
 								<div class="container">
 									<div class="row align-items-center">
-										<div class="col-sm-6">
+										<div class="col-md-6">
 											<div class="skill-box">
 												<div class="skill-title">
 													<div class="img">
@@ -286,7 +291,7 @@
 												</div>
 											</div>	
 										</div>	
-										<div class="col-sm-6">
+										<div class="col-md-6">
 											<div class="skill-box">
 											<div class="skill-title">
 												<div class="img">
@@ -309,7 +314,7 @@
 								</div>
 								<div class="container">
 									<div class="row align-items-center">
-										<div class="col-sm-4">
+										<div class="col-md-4">
 											<div class="skill-box">
 												<div class="skill-title">
 													<div class="img">
@@ -327,7 +332,7 @@
 												</div>
 											</div>
 										</div>	
-										<div class="col-sm-4">
+										<div class="col-md-4">
 											<div class="skill-box">
 												<div class="skill-title">
 													<div class="img">
@@ -346,7 +351,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-4">
+										<div class="col-md-4">
 											<div class="skill-box">
 												<div class="skill-title">
 													<div class="img">
