@@ -61,18 +61,21 @@
 		<!-- Collapse Navigation per size of screen feature -->
 		<div class="collapse navbar-collapse" id="navbarToggler">
 		<!-- Navigation bar links ML=right aligned, MR=left aligned -->
-			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
 				<a class="nav-link" href="#"> <i class="fas fa-home"></i> Home</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" href="#"><i class="fas fa-user"></i> About Me</a>
+				<a class="nav-link" href="#"><i class="fas fa-user"></i> About</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#"><i class="fas fa-clipboard-list"></i> Skills</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#"><i class="fas fa-briefcase"></i> Work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fas fa-cogs"></i> Projects</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i> Education</a>
@@ -83,25 +86,25 @@
 			</ul>
 		</div>
 	</nav>
-	
+	<br>
 	<!-- Container for about me section -->
-	<div class="container" id="About">
+	<div class="container d-flex justify-content-around" id="About">
 		<!--Image Section on Left-->
 		<div class="row">
-			<div class="col-xl-6">
-				<div class="text-center">
-				<br></br>
+			
+			<div class="col-lg-4 d-flex justify-content-center">
+				
 				<div class="button style3">
 					<img class="image profile" src="images/BibekGhi1.jpg">
-				<h5> Product Manager</h5> <p1>Owner - Developer -  Engineer</p1>
+				<h5>Product Manager</h5> <p1>Owner - Developer -  Engineer</p1>
 				</div>			
-				</div>
-			</div>		
+			</div>
 		<!--Everything Else on Right-->	
-			<div class="col-xl-6">
-				<br></br>
-				
-				<h5 class="button style1 d-flex justify-content-center">
+		
+		<div class="col-lg-8">
+			<br>
+			
+				<h5 class="button style1 d-flex justify-content-around">
 					Hi There! Let me introduce myself...
 				</h5>
 						<p class="text-left button style2">My name is Bibek Ghimire and I am a Nepali-American. 
@@ -119,7 +122,7 @@
 	<div class="container" id="Skills">
 		<!-- Skills Section New Row -->		
 		<br></br>
-		<div class="button style1 d-flex justify-content-center">
+		<div class="button style1 d-flex justify-content-around">
 				<h5>
 					Below are some of my core skills...
 				</h5>
@@ -137,6 +140,7 @@
 							<p1 class="button style2 d-flex justify-content-around">
 							Product strategy, 
 							Road mapping,
+
 							</p1>
 					</div>
 				</div>
