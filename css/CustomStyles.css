@@ -10,9 +10,9 @@ body {
     color: white; 
    
 }
-
-/* Button */
-
+html {
+    scroll-behavior: smooth;
+  }
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
@@ -322,3 +322,5 @@ button,
 	color: #fff; 
 	margin-top: 0.5rem; 
 }
+
+/* Timeline */

@@ -18,26 +18,32 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bibek Ghimire</title>
     <!-- Bootstrap -->
+	
 	<link href= "css/bootstrap.css" rel="stylesheet">
 	<link href= "css/CustomStyles.css" rel="stylesheet">
-	
+	<link href="css/animate.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+	
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
   </head>
   <body>
 	<!-- Navigation Bar Start-->  
 
-	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+	<nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-dark">
 	<!--Toggler Button-->
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<!-- Brand Title -->
-	<a class="navbar-brand d-flex px-1" href="#">Bibek Ghimire</a>
+	<a class="navbar-brand d-flex" href="#">
+		<img src="images/android-chrome-512x512.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		
+	</a>
 			<!-- Social and Contact Info-->
 			<div class="d-flex flex-row ml-auto px-2">
 				<ul class="navbar-nav flex-row">
@@ -69,19 +75,19 @@
 				<a class="nav-link" href="#"><i class="fas fa-user"></i> About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-clipboard-list"></i> Skills</a>
+					<a class="nav-link" href="#Skills"><i class="fas fa-clipboard-list"></i> Skills</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-briefcase"></i> Work</a>
+					<a class="nav-link" href="#work"><i class="fas fa-briefcase"></i> Work</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-cogs"></i> Projects</a>
+					<a class="nav-link" href="#Projects"><i class="fas fa-cogs"></i> Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i> Education</a>
+					<a class="nav-link" href="#Education"><i class="fas fa-graduation-cap"></i> Education</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-biking"></i> Hobbies</a>
+					<a class="nav-link" href="#Hobbies"><i class="fas fa-biking"></i> Hobbies</a>
 				</li>
 			</ul>
 		</div>
@@ -118,12 +124,13 @@
 				
 			</div>
 	</div>
+
 	<!-- Container for Skills section -->
 	<div class="container" id="Skills">
 		<!-- Skills Section New Row -->		
 		<br></br>
-		<div class="button style1 d-flex justify-content-around">
-				<h5>
+		<div class="d-flex justify-content-around">
+				<h5 class="button style1">
 					Below are some of my core skills...
 				</h5>
 		</div>
@@ -287,10 +294,10 @@
 					</div>
 					<div class="collapse" id="Collaboration">
 						<p1 class="button style2 d-flex justify-content-around">
+						Negotiator & Influencer -
 						Open Minded -
 						Adaptable -
 						Critical Thinker- 
-						Negotiator & Influencer - 
 						Realist 
 						<br>
 						<br>
@@ -301,83 +308,88 @@
 			</div>
 		</div>
 	</div>
-	<!-- Container for Work section -->									
-	<div class="container" id="work">
-	
-		<div class="button style1 d-flex justify-content-center">
-			<h5>
+
+	<!-- Container for Work section -->	
+	<div class="container" id="work">	
+		<div class="d-flex justify-content-around">
+			<h5 class="button style1">
 				Let's jump into my work history...
 			</h5>
 		</div>
-								<div class="container">
-									<div class="row align-items-center">
-										<div class="col-md-6">
-											<div class="skill-box">
-												<div class="skill-title">
-													<div class="img">
-														<img src="images/bkrlogo.png" class="skill-icon">
-													</div>
-													<h5 class="text-center">Jun 2012 - Sep 2020</h3>		
-												</div>
-											</div>
-										</div>		
-										<div class="col-md-6">
-											<div class="skill-box">
-												<div class="skill-title">
-													<div class="img">
-														<img src="images/okstate.png" class="skill-icon">
-													</div>
-													<h5 class="text-center">Feb 2009 - Jun 2012</h3>
-												</div>
-											</div>
-										</div>
-								</div>
+	
+
+	<!-- Work Buttons -->
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-6">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/bkrlogo.png" class="skill-icon">
+						</div>
+						<h5 class="text-center">Jun 2012 - Sep 2020</h3>		
+					</div>
+				</div>
+			</div>		
+			<div class="col-md-6">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/okstate.png" class="skill-icon">
+						</div>
+						<h5 class="text-center">Feb 2009 - Jun 2012</h3>
+					</div>
+				</div>
+			</div>
+	</div>
+
+<!-- Project Section -->
+
+	<div class="text-center" id="Project">
+		<h5 class="button style1">
+			Projects that i've been a part of...
+		</h5>
+	</div>
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-4">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/Robot.png" class="skill-icon">
+						</div>
+						<h5 class="text-center">Robot Build</h3>		
+						<!--https://youtu.be/jQfBZ3oswpQ-->
+					</div>
+				</div>
+			</div>	
+			<div class="col-md-4">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/airplane.png" class="skill-icon">
+						</div>
+						<h5 class="text-center">Aircraft Build</h3>
+						<!--https://youtu.be/lGShLwQXau8-->
+					</div>
+				</div>
+			</div>	
+			<div class="col-md-4">
+				<div class="skill-box">
+					<div class="skill-title">
+						<div class="img">
+							<img src="images/Ibajar_box_med.png" class="skill-icon">
+						</div>
+						<h5 class="text-center">e-commerce</h3>
+						<!--https://youtu.be/lGShLwQXau8-->
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<!-- Education Section -->
 							</section>
-							<section id="Projects">
-								<div class="text-center">
-									<h5 class="button style1">
-										Projects that i've been a part of...
-									</h5>
-								</div>
-								<div class="container">
-									<div class="row align-items-center">
-										<div class="col-md-4">
-											<div class="skill-box">
-												<div class="skill-title">
-													<div class="img">
-														<img src="images/Robot.png" class="skill-icon">
-													</div>
-													<h5 class="text-center">Robot Build</h3>		
-													<!--https://youtu.be/jQfBZ3oswpQ-->
-												</div>
-											</div>
-										</div>	
-										<div class="col-md-4">
-											<div class="skill-box">
-												<div class="skill-title">
-													<div class="img">
-														<img src="images/airplane.png" class="skill-icon">
-													</div>
-													<h5 class="text-center">Aircraft Build</h3>
-													<!--https://youtu.be/lGShLwQXau8-->
-												</div>
-											</div>
-										</div>	
-										<div class="col-md-4">
-											<div class="skill-box">
-												<div class="skill-title">
-													<div class="img">
-														<img src="images/Ibajar_box_med.png" class="skill-icon">
-													</div>
-													<h5 class="text-center">e-commerce</h3>
-													<!--https://youtu.be/lGShLwQXau8-->
-												</div>
-											</div>
-										</div>
-									</div>		
-								</div>
-							</section>
-							<section id="My Education">
+							<section id="Education">
 								<div class="text-center">
 									<h5 class="button style1">
 										My education...
@@ -480,12 +492,9 @@
 									</div>	
 								</div>	
 							</section>
-						</div>
+	</div>
 					
-				</div>
-			</div>
-		</div>
-	</div>	
+				
 <body> 
 <footer class="text-center">&#169; All Rights Reserved - Bibek Ghimire</footer>
 </body>
@@ -494,6 +503,7 @@
 	 <script src="https://kit.fontawesome.com/2870f27194.js" crossorigin="anonymous"></script>
 	 <!-- Include all compiled plugins (below), or include individual files as needed -->
 	 <script src="js/bootstrap.js"></script>
+	 <script src="js/animate.js"></script>
 </html>
 	
 	
