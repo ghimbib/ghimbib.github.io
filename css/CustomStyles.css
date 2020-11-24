@@ -8,7 +8,7 @@ body {
     background-attachment: fixed, fixed;
     font-family: 'Poppins';
     color: white; 
-   
+    padding-top: 70px; 
 }
 html {
     scroll-behavior: smooth;

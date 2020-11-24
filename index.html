@@ -29,12 +29,13 @@
 	
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
+	  
   </head>
-  <body>
+  <body  data-spy="scroll" data-target=".navbar" data-offset="100">
+	
 	<!-- Navigation Bar Start-->  
 
-	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 
 	<!-- Brand Title -->
 	<a class="navbar-brand">
@@ -51,8 +52,8 @@
 		<div class="collapse navbar-collapse" id="navbarToggler">
 		<!-- Navigation bar links ML=right aligned, MR=left aligned -->
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-				<a class="nav-link" href="#Home"> <i class="fas fa-home"></i> Home</a>
+				<li class="nav-item active">
+				<a class="nav-link" href="#"> <i class="fas fa-home"></i> Home</a>
 				</li>
 				<li class="nav-item">
 				<a class="nav-link" href="#About"><i class="fas fa-user"></i> About</a>
@@ -76,6 +77,7 @@
 		</div>
 	</nav>
 	<br>
+	
 	<!-- Container for about me section -->
 	<div class="container d-flex justify-content-around" id="About">
 		<!--Image Section on Left-->
@@ -311,6 +313,7 @@
 				</div>
 			</div>
 		</div>
+	<br>
 	</div>
 
 	<!-- Container for Work section -->	
@@ -345,11 +348,12 @@
 					</div>
 				</div>
 			</div>
+		
 	</div>
 
 <!-- Project Section -->
-
-	<div class="text-center" id="Project">
+<br>
+	<div class="text-center" id="Projects">
 		<h5 class="button style1">
 			Projects that i've been a part of...
 		</h5>
@@ -392,8 +396,10 @@
 		</div>		
 	</div>
 	<!-- Education Section -->
+
 							</section>
 							<section id="Education">
+								<br>
 								<div class="text-center">
 									<h5 class="button style1">
 										My education...
@@ -431,6 +437,7 @@
 								</div>		
 							</section>
 							<section id="Hobbies">
+								<br>
 								<div class="text-center">
 									<h5 class="button style1">
 										And finally some fun hobbies...
