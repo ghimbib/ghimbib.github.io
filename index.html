@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +14,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bibek Ghimire - Product Manager & Engineer">
+    <meta property="og:description" content="Portfolio of Bibek Ghimire - Product Manager, Engineer, and Developer. Explore skills, work history, and projects.">
+    <meta property="og:image" content="https://bibekghimire.com/images/BibekGhi3.jpeg">
+    <meta property="og:url" content="https://bibekghimire.com">
+    <meta property="og:type" content="website">
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bibek Ghimire</title>
     <!-- Bootstrap -->
@@ -22,7 +29,10 @@
 	<link href= "css/bootstrap.css" rel="stylesheet">
 	<link href= "css/CustomStyles.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+    
+    <link rel="icon" type="image/webp" href="images/favicon-32x32.webp">
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	
@@ -38,8 +48,10 @@
 
 	<!-- Brand Title -->
 	<a class="navbar-brand">
-		<img src="images/android-chrome-512x512.png" width="30" height="30" class="d-inline-block align-top" alt="">
-		
+        <picture>
+            <source srcset="images/android-chrome-512x512.webp" type="image/webp">
+		    <img src="images/android-chrome-512x512.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        </picture>
 	</a>
 	<div class="d-flex justify-content-center">
 		<ul class="navbar-nav flex-row">
@@ -94,14 +106,17 @@
 		</div>
 	</nav>
 	<!-- Container for about me section -->
-	<div class="container d-flex justify-content-around">
+	<section class="container d-flex justify-content-around" id="About">
 		<!--Image Section on Left-->
 		<div class="row">
 			
 			<div class="col-lg-4 d-flex justify-content-center">
 				
-				<div class="button style3" id="About">
-					<img class="image profile" src="images/BibekGhi3.jpeg">
+				<div class="button style3">
+                    <picture>
+                        <source srcset="images/BibekGhi3.webp" type="image/webp">
+					    <img class="image profile" src="images/BibekGhi3.jpeg" alt="Bibek Ghimire">
+                    </picture>
 								<!-- Social and Contact Info-->
 	
 				<h4>Bibek Ghimire</h4> <h5>I'm <span class="txt-rotate"
@@ -128,11 +143,11 @@
 				</div>
 				
 			</div>
-	</div>
+	</section>
 	<!-- Container for Skills section -->
-	<div class="container" id="Skills">
+	<section class="container" id="Skills">
 		<!-- Skills Section New Row -->		
-		<br></br>
+		<br><br>
 		<div class="row justify-content-around">
 				<h5 class="button style1">
 					Below are some of my core skills...
@@ -141,45 +156,43 @@
 		<div class="row justify-content-around">
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title" 
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#ProductManagement" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/product-management.svg" class="skill-icon">
+							<img src="images/product-management.svg" class="skill-icon" alt="Product Management">
 						</div>
 						<h5>Product Management</h5>
 					</div>
 					<div class="collapse button style2" id="ProductManagement">
-							<p1>
+							<p>
 							Strategy - 
 							Road maps -
 							Workflow prioritization -
 							Targeted communications -
 							Customer focus 
-							</p1>
+							</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title"
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#ProductDevelopment" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/development.svg" class="skill-icon">
+							<img src="images/development.svg" class="skill-icon" alt="Product Development">
 						</div>
 						<h5>Product Development</h5>
 					</div>
 					<div class="collapse button style2" id="ProductDevelopment">
-						<p1>
+						<p>
 						Brainstorming & Ideation - 
 						Engineering & Design -
 						Analysis -
@@ -191,27 +204,26 @@
 						Software: Unigraphics, Solidworks
 						<br>
 						Code: Visual Basic, Python, HTML5, CSS, Bootsrap, JavaScript
-						</p1>
+						</p>
 	
 				</div>
 				</div>
 			</div>
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title"
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#ProjectManagement" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/agile.svg" class="skill-icon">
+							<img src="images/agile.svg" class="skill-icon" alt="Project Management">
 						</div>
 						<h5>Project Management</h5>
 					</div>
 					<div class="collapse button style2" id="ProjectManagement">
-						<p1>
+						<p>
 						Servant Leadership -
 						Communication - 
 						Team, Time and Risk Management 
@@ -220,26 +232,28 @@
 						Methodologies: Waterfall, StageGate, Agile, 4DX
 						<br>
 						Software: Jira, Excel, MS Project
-						</p1>
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title"
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#DataAnalytics" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/statistics.png" class="skill-icon">
+                            <picture>
+                                <source srcset="images/statistics.webp" type="image/webp">
+							    <img src="images/statistics.png" class="skill-icon" alt="Data Analytics">
+                            </picture>
 						</div>
 						<h5>Data Analytics</h5>
 					</div>
 					<div class="collapse" id="DataAnalytics">
-						<p1 class="button style2 d-flex justify-content-around">
+						<p class="button style2 d-flex justify-content-around">
 						Understanding data requirements -
 						Data Analysis -
 						Interpretation - 
@@ -249,26 +263,28 @@
 						<br>
 						<br>
 						Software: PowerBi, Excel, Tableau, Matlab
-						</p1>
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title"
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#MarketStrategy" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/presentation.png" class="skill-icon">
+                            <picture>
+                                <source srcset="images/presentation.webp" type="image/webp">
+							    <img src="images/presentation.png" class="skill-icon" alt="Market Strategy">
+                            </picture>
 						</div>
 						<h5>Market Strategy</h5>
 					</div>
 					<div class="collapse" id="MarketStrategy">
-						<p1 class="button style2 d-flex justify-content-around">
+						<p class="button style2 d-flex justify-content-around">
 						Competitor Research -
 						Go-To-Market Strategy -
 						Product Positioning - 
@@ -278,26 +294,28 @@
 						<br>
 						<br>
 						Support through: Trade shows, presentations, webinars & strategic marketing
-						</p1>
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title"
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#Collaboration" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/teamwork.png" class="skill-icon">
+                            <picture>
+                                <source srcset="images/teamwork.webp" type="image/webp">
+							    <img src="images/teamwork.png" class="skill-icon" alt="Collaboration">
+                            </picture>
 						</div>
 						<h5>Collaboration</h5>
 					</div>
 					<div class="collapse" id="Collaboration">
-						<p1 class="button style2 d-flex justify-content-around">
+						<p class="button style2 d-flex justify-content-around">
 						Negotiator & Influencer -
 						Open Minded -
 						Adaptable -
@@ -306,37 +324,39 @@
 						<br>
 						<br>
 						Support through: Mentoring, Optimistic Outlook, Team Motivation
-						</p1>
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	<br>
-	</div>
+	</section>
 	<!-- Container for Work section -->	
-	<div class="container" id="work">	
+	<section class="container" id="work">	
 		<div class="row justify-content-around">
 			<h5 class="button style1">
 				Let's jump into my work history...
 			</h5>
 		</div>
-	</div>
+	
 	<!-- Work Buttons -->
-	<div class="container">
+	
 		<div class="row justify-content-around">
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title"
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#BKRwork" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/bkrlogo.png" class="skill-icon">
+                            <picture>
+                                <source srcset="images/bkrlogo.webp" type="image/webp">
+							    <img src="images/bkrlogo.png" class="skill-icon" alt="Baker Hughes">
+                            </picture>
 						</div>
-						<h5 class="text-center">Jun 2011 - Sep 2020</h3>		
+						<h5 class="text-center">Jun 2011 - Sep 2020</h5>		
 					</div>
 					<div class="collapse" id="BKRwork">
 						<div class="container">
@@ -422,17 +442,19 @@
 			</div>		
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title"
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#OKStatework" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/okstate.png" class="skill-icon">
+                            <picture>
+                                <source srcset="images/okstate.webp" type="image/webp">
+							    <img src="images/okstate.png" class="skill-icon" alt="Oklahoma State University">
+                            </picture>
 						</div>
-						<h5 class="text-center">Feb 2009 - Jun 2012</h3>
+						<h5 class="text-center">Feb 2009 - Jun 2012</h5>
 					</div>
 					<div class="collapse" id="OKStatework">
 						<div class="container">
@@ -468,34 +490,34 @@
 			</div>
 		
 	</div>
-</div>
+    </section>
 		
 		
 
 <!-- Project Section -->
-<div class="container">
-	<div class="row justify-content-around" id="Projects">
+<section class="container" id="Projects">
+	<div class="row justify-content-around">
 		<h5 class="button style1">
 			Projects that i've been a part of...
 		</h5>
 	</div>
-</div>
 
-<div class="container">
 	<div class="row justify-content-around">
 		<div class="col-md-auto">
 			<div class="skill-box">
-				<div class="skill-title"
-				class="btn btn-primary" 
+				<div class="skill-title btn btn-primary" 
 				data-toggle="collapse" 
 				href="#Portfolio" 
 				role="button" 
 				aria-expanded="false" 
 				aria-controls="collapseExample">
 					<div class="img">
-						<img src="images/android-chrome-512x512.png" class="skill-icon">
+                        <picture>
+                            <source srcset="images/android-chrome-512x512.webp" type="image/webp">
+						    <img src="images/android-chrome-512x512.png" class="skill-icon" alt="Portfolio">
+                        </picture>
 					</div>
-					<h5 class="text-center">Portfolio</h3>
+					<h5 class="text-center">Portfolio</h5>
 				</div>
 				<div class="collapse" id="Portfolio">
 					<div class="main-timeline">
@@ -503,10 +525,10 @@
 						<p class="description">
 							Created a personal portfolio page utilizing Bootstrap framework and creating/modifying CSS, HTML and JavaScript code. Utilized Github for source control as well as webpage deployment. 
 						</p>
-					</br>
+					<br>
 						<div class="justify-content-around">
 							<div class="embed-responsive embed-responsive-16by9">
-								<iframe class="embed-responsive-item" src="https://bibekghimire.com" allowfullscreen></iframe>
+								<iframe class="embed-responsive-item" src="https://bibekghimire.com" allowfullscreen loading="lazy"></iframe>
 							</div>
 						</div>
 					</a>
@@ -516,17 +538,19 @@
 		</div>
 		<div class="col-md-auto">
 			<div class="skill-box">
-				<div class="skill-title"
-				class="btn btn-primary" 
+				<div class="skill-title btn btn-primary" 
 				data-toggle="collapse" 
 				href="#ECommerce" 
 				role="button" 
 				aria-expanded="false" 
 				aria-controls="collapseExample">
 					<div class="img">
-						<img src="images/Ibajar_box_med.png" class="skill-icon">
+                        <picture>
+                            <source srcset="images/Ibajar_box_med.webp" type="image/webp">
+						    <img src="images/Ibajar_box_med.png" class="skill-icon" alt="e-commerce">
+                        </picture>
 					</div>
-					<h5 class="text-center">e-commerce</h3>
+					<h5 class="text-center">e-commerce</h5>
 				</div>
 				<div class="collapse" id="ECommerce">
 					<div class="main-timeline">
@@ -536,7 +560,11 @@
 						</p>
 						<div class="justify-content-around">
 							<div class="embed-responsive embed-responsive-16by9">
-								<iframe class="embed-responsive-item" src="images/iBajarsnapshot.jpg" allowfullscreen></iframe>
+                                <!-- Replaced iframe image with img-fluid and picture tag -->
+                                <picture>
+                                    <source srcset="images/iBajarsnapshot.webp" type="image/webp">
+                                    <img class="embed-responsive-item img-fluid" src="images/iBajarsnapshot.JPG" alt="iBajar Snapshot">
+                                </picture>
 							</div>
 						</div>
 					</a>
@@ -547,17 +575,19 @@
 		
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title"
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#AircraftBuild" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/airplane.png" class="skill-icon">
+                            <picture>
+                                <source srcset="images/airplane.webp" type="image/webp">
+							    <img src="images/airplane.png" class="skill-icon" alt="Aircraft Build">
+                            </picture>
 						</div>
-						<h5 class="text-center">Aircraft Build</h3>
+						<h5 class="text-center">Aircraft Build</h5>
 						<!--https://youtu.be/lGShLwQXau8-->
 					</div>
 					<div class="collapse" id="AircraftBuild">
@@ -568,7 +598,7 @@
 								I've included the video I created to advertise the event below. 
 							<div class="justify-content-around">
 								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lGShLwQXau8" allowfullscreen></iframe>
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lGShLwQXau8" allowfullscreen loading="lazy"></iframe>
 								</div>
 							</div>
 							</p>
@@ -580,17 +610,19 @@
 	
 			<div class="col-md-auto">
 				<div class="skill-box">
-					<div class="skill-title"
-					class="btn btn-primary" 
+					<div class="skill-title btn btn-primary" 
 					data-toggle="collapse" 
 					href="#RobotBuild" 
 					role="button" 
 					aria-expanded="false" 
 					aria-controls="collapseExample">
 						<div class="img">
-							<img src="images/Robot.png" class="skill-icon">
+                            <picture>
+                                <source srcset="images/Robot.webp" type="image/webp">
+							    <img src="images/Robot.png" class="skill-icon" alt="Robot Build">
+                            </picture>
 						</div>
-						<h5 class="text-center">Robot Build</h3>
+						<h5 class="text-center">Robot Build</h5>
 					</div>
 					<div class="collapse" id="RobotBuild">
 						<div class="main-timeline">
@@ -599,11 +631,11 @@
 							Designed, built and drove a remote controlled robot to complete the task of placing and holding a ping-pong ball higher than the opponent. A fixed budget was assigned to each team. 
 							Utilized computer aided design software for the design the vehicle. Produced the robot components utilizing mill, lathe and CNC machine to create bearing holders, drive shafts, gear reducers and frame. 
 							Below is a video of the robot (bottom left) winnnig a round of the competition. 
-							</br>
-							</br>
+							<br>
+							<br>
 							<div class="justify-content-around">
 								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jQfBZ3oswpQ" allowfullscreen></iframe>
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jQfBZ3oswpQ" allowfullscreen loading="lazy"></iframe>
 									</div>
 							</div>
 							</p>
@@ -613,25 +645,25 @@
 				</div>
 			</div>	
 		</div>		
-	</div>
+</section>
 	<!-- Education Section -->
 
 							
-	<div class="container">
+	<section class="container" id="education">
 		<div class="row justify-content-around">					
 			<h5 class="button style1">
 				My education...
 			</h5>
 		</div>
-	</div>
-
-<div class="container"  id="education">
 	<div class="row justify-content-around">
 		<div class="col-md-auto">
 			<div class="skill-box">
 				<div class="skill-title">
 					<div class="img">
-						<img src="images/okstate.png" class="skill-icon">
+                        <picture>
+                            <source srcset="images/okstate.webp" type="image/webp">
+						    <img src="images/okstate.png" class="skill-icon" alt="OK State">
+                        </picture>
 					</div>
 					<h5 class="text-center">Aerospace 
 						&
@@ -645,7 +677,10 @@
 			<div class="skill-box">
 			<div class="skill-title">
 				<div class="img">
-					<img src="images/SHS.png" class="skill-icon">
+                    <picture>
+                        <source srcset="images/SHS.webp" type="image/webp">
+					    <img src="images/SHS.png" class="skill-icon" alt="SHS">
+                    </picture>
 				</div>
 				<h5 class="text-center">Stillwater High School
 				</h5>
@@ -654,23 +689,21 @@
 			</div>
 		</div>	
 	</div>
-</div>		
+    </section>		
 
 
-<div class="container" section id="Hobbies">
+<section class="container" id="Hobbies">
 	<div class="row justify-content-around">	
 	<h5 class="button style1">
 		And finally some fun hobbies...
 	</h5>
 	</div>
-</div>
-<div class="container">
 	<div class="row justify-content-around">
 		<div class="col-md-auto">
 			<div class="skill-box">
 				<div class="skill-title">
 					<div class="img">
-						<img src="images/cycling.svg" class="skill-icon">
+						<img src="images/cycling.svg" class="skill-icon" alt="Cycling">
 					</div>
 					<h5 class="text-center">Cycling</h5>		
 				</div>
@@ -680,7 +713,7 @@
 			<div class="skill-box">
 				<div class="skill-title">
 					<div class="img">
-						<img src="images/jogging.svg" class="skill-icon">
+						<img src="images/jogging.svg" class="skill-icon" alt="Running">
 					</div>
 					<h5 class="text-center">Running</h5>
 				</div>
@@ -690,7 +723,7 @@
 			<div class="skill-box">
 				<div class="skill-title">
 					<div class="img">
-						<img src="images/carpenter.svg" class="skill-icon">
+						<img src="images/carpenter.svg" class="skill-icon" alt="Woodworking">
 					</div>
 					<h5 class="text-center">Woodworking</h5>
 				</div>
@@ -700,7 +733,10 @@
 			<div class="skill-box">
 				<div class="skill-title">
 					<div class="img">
-						<img src="images/agriculture.png" class="skill-icon">
+                        <picture>
+                            <source srcset="images/agriculture.webp" type="image/webp">
+						    <img src="images/agriculture.png" class="skill-icon" alt="Gardening">
+                        </picture>
 					</div>
 					<h5 class="text-center">Gardening</h5>
 				</div>
@@ -710,9 +746,9 @@
 			<div class="skill-box">
 				<div class="skill-title">
 					<div class="img">
-						<img src="images/test.svg" class="skill-icon">
+						<img src="images/test.svg" class="skill-icon" alt="Tech/Biology">
 					</div>
-					<h5 class="text-center">Tech/Biology</br></h5>
+					<h5 class="text-center">Tech/Biology<br></h5>
 				</div>
 			</div>
 		</div>
@@ -720,24 +756,24 @@
 			<div class="skill-box">
 				<div class="skill-title">
 					<div class="img">
-						<img src="images/Space.svg" class="skill-icon">
+						<img src="images/Space.svg" class="skill-icon" alt="Space/Aviation">
 					</div>
 					<h5 class="text-center">Space/Aviation</h5>
 				</div>
 			</div>
 		</div>
 	</div>	
-</div>	
+</section>	
 
 <!-- Testimonial Section -->
-<div class="container">
-	<div class="row justify-content-around">	
-	<h5 class="button style1">
-		What others say about me... 
-	</h5>
-	</div>
-</div>
 <section class="testimonial">
+    <div class="container">
+	    <div class="row justify-content-around">	
+	    <h5 class="button style1">
+		    What others say about me... 
+	    </h5>
+	    </div>
+    </div>
 
 	<div class="container">
 		
@@ -745,10 +781,10 @@
             <div class="button style2">
                 <div class="card-body p-0">
 					<div class="profile mb-4 mt-3"> 
-						<img src="https://media-exp1.licdn.com/dms/image/C4E03AQEzAlpWtgTetw/profile-displayphoto-shrink_100_100/0/1544760421930?e=1613001600&amp;v=beta&amp;t=z73QNYfK7sMlR8gX2Nwrvc26xSEgkEu0eNLuesQkJQM">
+						<img src="https://media-exp1.licdn.com/dms/image/C4E03AQEzAlpWtgTetw/profile-displayphoto-shrink_100_100/0/1544760421930?e=1613001600&amp;v=beta&amp;t=z73QNYfK7sMlR8gX2Nwrvc26xSEgkEu0eNLuesQkJQM" alt="David Gavia">
 					</div>
-					<p1 class="text-muted">David Gavia</p1> </br>
-					<p1 class="intro text-muted">Techno-Commercial Manager at Baker Hughes</p1> </br>
+					<p class="text-muted">David Gavia</p> <br>
+					<p class="intro text-muted">Techno-Commercial Manager at Baker Hughes</p> <br>
 				
 					<div class="card-subtitle">
                         <p> <small class="text-muted"> <i class="fas fa-quote-left"></i> I have worked with Bibek several years while he designed Hybrid drill bits as a Research, Design and Development (RDD) engineer at Baker Hughes. 
@@ -759,7 +795,7 @@
 							
 							Bibek is always positive and great with everyone. When you hire Bibek you get an energetic leader who will lift up everyone around him. <i class="fas fa-quote-left fa-flip-horizontal"></i> </small> </p>
 					</div>
-					<p1 class="intro text-muted"> December 10, 2020, Bibek worked with David in the same group</p1>
+					<p class="intro text-muted"> December 10, 2020, Bibek worked with David in the same group</p>
 					</div>
 			</div>
 		</div>
@@ -769,15 +805,15 @@
             <div class="button style2">
                 <div class="card-body p-0">
 					<div class="profile mb-4 mt-3"> 
-						<img src="https://media-exp1.licdn.com/dms/image/C5603AQHJAjtIJGE8Aw/profile-displayphoto-shrink_100_100/0/1516886240547?e=1613001600&amp;v=beta&amp;t=Wl4xuTSn7cyCsIatEwyXOYz7XQ4Q54gMUP_phOyxB40">
+						<img src="https://media-exp1.licdn.com/dms/image/C5603AQHJAjtIJGE8Aw/profile-displayphoto-shrink_100_100/0/1516886240547?e=1613001600&amp;v=beta&amp;t=Wl4xuTSn7cyCsIatEwyXOYz7XQ4Q54gMUP_phOyxB40" alt="Valerie Ferdin">
 					</div>
-					<p1 class="text-muted">Valerie Ferdin, MBA</p1> </br>
-					<p1 class="intro text-muted">Lead Engineer - Wellbore Intervention at Baker Hughes</p1> </br>
+					<p class="text-muted">Valerie Ferdin, MBA</p> <br>
+					<p class="intro text-muted">Lead Engineer - Wellbore Intervention at Baker Hughes</p> <br>
 				
 					<div class="card-subtitle">
                         <p> <small class="text-muted"> <i class="fas fa-quote-left"></i> Bibek and I worked at Baker Hughes together for the course of 8 years. Bibek is a great teammate who exhibits influential leadership characteristics that others follow by example. His eagerness to learn, educate others, and continuous passion for the tasks at hand, made my time working with Bibek rewarding. Bibek’s greatest impact over the course of our career together was reaching goals beyond market expectations. His drive and perseverance to exceed expectations provides merit based work results on each project he is involved in. Just as I was lucky to be a fellow coworker throughout the years, any work group would benefit to have Bibek on their team! <i class="fas fa-quote-left fa-flip-horizontal"></i> </small> </p>
 					</div>
-					<p1 class="intro text-muted"> December 2, 2020, Valerie worked with Bibek in different groups</p1>
+					<p class="intro text-muted"> December 2, 2020, Valerie worked with Bibek in different groups</p>
 					</div>
 			</div>
 		</div>
@@ -787,10 +823,10 @@
             <div class="button style2">
                 <div class="card-body p-0">
 					<div class="profile mb-4 mt-3"> 
-						<img src="https://media-exp1.licdn.com/dms/image/C4E03AQF8rdczMhLz3A/profile-displayphoto-shrink_100_100/0/1590010214027?e=1613001600&amp;v=beta&amp;t=HA1TBJ7J13e-FCutnBt4IV1IsiAEHq8MEQ-yofNWVw4">
+						<img src="https://media-exp1.licdn.com/dms/image/C4E03AQF8rdczMhLz3A/profile-displayphoto-shrink_100_100/0/1590010214027?e=1613001600&amp;v=beta&amp;t=HA1TBJ7J13e-FCutnBt4IV1IsiAEHq8MEQ-yofNWVw4" alt="Derek Nelms">
 					</div>
-					<p1 class="text-muted">Derek Nelms</p1> </br>
-					<p1 class="intro text-muted">Product Manager - Drill Bits at Baker Hughes</p1> </br>
+					<p class="text-muted">Derek Nelms</p> <br>
+					<p class="intro text-muted">Product Manager - Drill Bits at Baker Hughes</p> <br>
 				
 					<div class="card-subtitle">
                         <p> <small class="text-muted"> <i class="fas fa-quote-left"></i> Bibek brings a brilliant blend of deep technical understanding,</span>
@@ -799,7 +835,7 @@
 							<span class="lt-line-clamp__line lt-line-clamp__line--last">
 							positive impact to your organization, look no further!<i class="fas fa-quote-left fa-flip-horizontal"></i> </small> </p>
 					</div>
-					<p1 class="intro text-muted"> October 23, 2020, Bibek worked with Derek in the same group</p1>
+					<p class="intro text-muted"> October 23, 2020, Bibek worked with Derek in the same group</p>
 					</div>
 			</div>
 		</div>
@@ -809,10 +845,10 @@
             <div class="button style2">
                 <div class="card-body p-0">
 					<div class="profile mb-4 mt-3"> 
-						<img src="https://media-exp1.licdn.com/dms/image/C4D03AQHvvP2Ecm3Tcg/profile-displayphoto-shrink_100_100/0/1516529634797?e=1613001600&amp;v=beta&amp;t=whFz75JdQ2NHyE1oOEsG2k2eWZvEN9Wc0k5R5ZYNtd0">
+						<img src="https://media-exp1.licdn.com/dms/image/C4D03AQHvvP2Ecm3Tcg/profile-displayphoto-shrink_100_100/0/1516529634797?e=1613001600&amp;v=beta&amp;t=whFz75JdQ2NHyE1oOEsG2k2eWZvEN9Wc0k5R5ZYNtd0" alt="Reed Spencer">
 					</div>
-					<p1 class="text-muted">Reed Spencer</p1> </br>
-					<p1 class="intro text-muted">R&amp;D Mechanical Engineer at Baker Hughes, a GE company</p1> </br>
+					<p class="text-muted">Reed Spencer</p> <br>
+					<p class="intro text-muted">R&amp;D Mechanical Engineer at Baker Hughes, a GE company</p> <br>
 				
 					<div class="card-subtitle">
 						<div class="card-subtitle">
@@ -823,7 +859,7 @@
 								<span class="lt-line-clamp__line lt-line-clamp__line--last">
 								ownership/product management.  Though I did not work in his group, I had a lot of interaction with him over the years. He is dedicated to doing things right, and doing the right thing-always.<i class="fas fa-quote-left fa-flip-horizontal"></i> </small> </p>
 						</div>
-					<p1 class="intro text-muted">  October 23, 2020, Reed worked with Bibek in different groups</p1>
+					<p class="intro text-muted">  October 23, 2020, Reed worked with Bibek in different groups</p>
 					</div>
 				</div>
 			</div>
@@ -834,10 +870,10 @@
             <div class="button style2">
                 <div class="card-body p-0">
 					<div class="profile mb-4 mt-3"> 
-						<img src="https://media-exp1.licdn.com/dms/image/C5603AQGbpMjl2UMdkg/profile-displayphoto-shrink_100_100/0/1517692800039?e=1613001600&amp;v=beta&amp;t=polAMwFcBD6UZfdT1gl4sVjNDbkwGBksSElJlCEmkKI">
+						<img src="https://media-exp1.licdn.com/dms/image/C5603AQGbpMjl2UMdkg/profile-displayphoto-shrink_100_100/0/1517692800039?e=1613001600&amp;v=beta&amp;t=polAMwFcBD6UZfdT1gl4sVjNDbkwGBksSElJlCEmkKI" alt="Aaron Erdwurm">
 					</div>
-					<p1 class="text-muted">Aaron Erdwurm</p1> </br>
-					<p1 class="intro text-muted">General Manager at Gator Hawk Pipe Rental</p1> </br>
+					<p class="text-muted">Aaron Erdwurm</p> <br>
+					<p class="intro text-muted">General Manager at Gator Hawk Pipe Rental</p> <br>
 				
 					<div class="card-subtitle">
 						<div class="card-subtitle">
@@ -848,7 +884,7 @@
 								dedicated and hard working, with a personality to match.
 								<i class="fas fa-quote-left fa-flip-horizontal"></i> </small> </p>
 						</div>
-					<p1 class="intro text-muted">  September 6, 2020, Aaron was senior to Bibek but didn’t manage directly</p1>
+					<p class="intro text-muted">  September 6, 2020, Aaron was senior to Bibek but didn’t manage directly</p>
 					</div>
 				</div>
 			</div>
@@ -859,10 +895,10 @@
             <div class="button style2">
                 <div class="card-body p-0">
 					<div class="profile mb-4 mt-3"> 
-						<img src="https://media-exp1.licdn.com/dms/image/C5603AQEWM3MFiqYQUQ/profile-displayphoto-shrink_100_100/0/1527950453812?e=1613001600&amp;v=beta&amp;t=aDOphyFYUCEtujaLDoUoUUSfqou9EVtwvg6YKkCAo3s">
+						<img src="https://media-exp1.licdn.com/dms/image/C5603AQEWM3MFiqYQUQ/profile-displayphoto-shrink_100_100/0/1527950453812?e=1613001600&amp;v=beta&amp;t=aDOphyFYUCEtujaLDoUoUUSfqou9EVtwvg6YKkCAo3s" alt="Shriti Pradhan">
 					</div>
-					<p1 class="text-muted">Shriti Pradhan</p1> </br>
-					<p1 class="intro text-muted">Data Analyst</p1> </br>
+					<p class="text-muted">Shriti Pradhan</p> <br>
+					<p class="intro text-muted">Data Analyst</p> <br>
 				
 					<div class="card-subtitle">
 						<div class="card-subtitle">
@@ -873,7 +909,7 @@
 								hard-working, fun loving and superb perfomer
 								<i class="fas fa-quote-left fa-flip-horizontal"></i> </small> </p>
 						</div>
-					<p1 class="intro text-muted">  March 7, 2011, Bibek worked with Shriti in the same group</p1>
+					<p class="intro text-muted">  March 7, 2011, Bibek worked with Shriti in the same group</p>
 					</div>
 				</div>
 			</div>
@@ -882,10 +918,7 @@
 
 
 </section>
-
-<body> 
 <footer class="text-center">&#169; All Rights Reserved - Bibek Ghimire</footer>
-</body>
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	 <script src="https://kit.fontawesome.com/2870f27194.js" crossorigin="anonymous"></script>
@@ -894,11 +927,5 @@
      <!-- Typed.js -->
      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 	 <script src="js/interaction.js"></script>
+</body>
 </html>
-	
-	
-		
-  
- 
-
-	
